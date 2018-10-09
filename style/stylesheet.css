@@ -1,0 +1,487 @@
+
+@import "compass/css3";
+
+
+*{
+	box-sizing: border-box;
+}
+
+
+article, aside, main ,footer,nav, header {
+   display: block;
+} /* For older versions of navigators that dont support HTML5. Makes sure that the tag starts in a new line.*/
+
+
+body, h1,h2,h3,h4,h5,h6,a,p,article,aside,footer,header,main,nav,section{
+
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+/*Responsive Web Page*/
+
+[class*="col-"] {
+    float: left;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width:50% 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    div.desaparece-tab{
+      display: none;
+    }
+
+
+    div.aparece-tab{
+      display: block;
+      float: left;
+    }
+
+    section.auto{
+      height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+    div.aparece-mov{
+        display: block;
+    }
+
+    .desaparece-mov{
+      display: none;
+    }
+
+    div.desaparece-mov{
+      display: none;
+    }
+
+  
+
+    
+}
+
+
+
+
+header{
+
+  border-radius: 3px;
+  margin-top: 3px;
+  padding: 20px 20px;
+  background-color: #669999;
+  color: black;
+  height: 100px;
+
+}
+
+body{
+  overflow-x: hidden;
+  width: auto;
+  height: auto
+  margin-left:auto;
+  margin-right: auto; 
+  margin-top: 2px;
+  background-color: #e6e6e6;  /*#ffffcc; */   
+  font-family: Neue Helvetica,Helvetica Neue,Helvetica,Arial;
+
+}
+
+
+section{
+  background-color: white;
+  border: 1px solid grey;
+  margin-top: 3px;
+  padding: 1px;
+  border-radius: 3px;
+  
+  height: 480px;
+
+}
+
+
+footer{
+
+  width: 100%;
+  height: 60px;
+  float: left;
+
+}
+
+h4{
+	font-size: 13px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+li a{
+	color: black;
+	text-decoration: none;
+	
+}
+
+
+
+ul li a{
+	font-size: 10px;
+
+}
+
+p{
+	 font-size: 9px;
+	 padding: 9px
+	
+}
+
+hr {
+	text-align: center;
+  border: 0;
+  display:block;           
+  background-color: black;
+  height: 1px;
+  margin-top: 10px;
+}
+
+
+
+
+#pagetitle{
+  float: left;
+   margin-top: 13px; 
+}
+
+#pagephoto{
+  float: left;
+  width: 90px;
+  height: 50px;
+  margin-top: 5px; 
+}
+
+#userphoto{
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 0px;
+  margin-top: 14px;
+  float: left;
+  width: 66px;
+  height: 66px;
+  margin-left: 27px;
+
+}
+#username{
+  margin-top: 33px; 
+  float: left; 
+  margin-left: 20px;
+}
+
+#palabrasclave{
+  margin-top: 5px;
+}
+
+#sociallinks{
+  float: right;
+  margin-right: 4px;
+}
+
+
+
+#personalinfo{
+
+  display: none;
+}
+
+#lastopinions{
+  display: none;
+}
+
+#personalinfo:target{
+     display: block;
+}
+
+#lastopinions:target{
+  display: block;
+
+}
+
+#marginnn{
+  margin-top: 3%;
+  float: left;
+}
+
+
+
+a.link:hover{
+	text-decoration: underline;
+
+}
+
+
+.right{
+  float: right;
+}
+
+
+.options{
+	  display: inline;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-left: 42px;
+}
+
+.menu{
+  margin-top: -25px;
+
+}
+
+
+
+.titlepersinfo{
+  padding: 2%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+
+.apartado{
+	width: 100%;
+	padding: 5px;
+	margin-top: 0px;
+	float: left;
+}
+
+.description{
+  padding: 1px; 
+  font-size: 10px;
+}
+
+.recuadro{
+	 margin-top: 9px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px;
+    float:left;
+    margin-left: 13px;
+
+}
+
+.cruz{
+	height: 10px;
+	width: 10px;
+	float: left;
+	margin-left: -6px;
+    margin-top: 4px;
+}
+
+.plus{
+	    float: right;
+    height: 11px;
+    width: 10px;
+    border: 0.8px solid black;
+    border-radius: 2px;
+    margin-top: -12px;
+
+}
+
+.linklist{
+	float: left;
+    font-size: 10px;
+    list-style-type: none;
+    
+    font-size: 13px;
+    margin-left: -32px;
+    margin-top: 4px;
+}
+
+.socialimg{
+	border-radius: 6px;	
+	float: left;
+    width: 25px;
+    height: 22px;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+
+a.highlight:hover {
+    color: grey;
+} 
+
+.links{
+	text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+.links:hover{
+
+	color: grey;
+}
+
+.links:active{
+	color: grey;
+}
+
+.opinionlinks{
+  color: blue;
+}
+ 
+
+
+.formatocaja{
+	   border: 1px solid grey;
+    border-radius: 3px;
+    padding-left: 2px;
+    color: #bfbfbf;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.circle{
+	width: 59px;
+	height: 59px;
+	border-radius: 50%;
+	border: 2px solid grey;
+	float: left;
+	margin-left: 4%;
+  margin-right: 4%;
+
+}
+
+#margen{
+  
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+/*#lastopinions:target > .disappear-pers{
+	display: none;
+}
+
+
+
+.disappear-pers{
+	display: none;
+
+}
+
+.disappear-last{
+
+}*/
+
+.last-recuadro{
+       border: 2px solid grey;
+    border-radius: 3px;
+    float: left;
+    height: 120px;
+    margin-top: 8px;
+    margin-left: 19%;
+
+
+}
+
+.last-photo{
+	     width: 24%;
+    height: 76%;
+    margin: 14px;
+    margin-left: 20px;
+    border-radius: 9px;
+}
+
+
+
+.refreshicon{
+    float: left;
+    margin: 45px;
+    margin-left: 49%;
+    width: 25px;
+    height: 26px;
+
+
+}
+
+.titulo{
+	width: 67%;
+  
+  padding-top: 4%;
+  padding-left: 0px;
+}
+
+.number{
+  margin-top: 9px;
+  text-align: center;
+}
+
+.etiqueta{
+  margin-top: 8px;
+  text-align: center;
+}
+.opinioncontent{
+  padding: 3px; 
+  margin-top: 8px;
+}
+
+.hidden{
+  display: none;
+}
+
+.inline{
+   display: inline;
+   margin-left: 4%;
+}
+
+.finalmenu{
+ 
+  width: 70%;
+  
+  font-size: 10px;
+}

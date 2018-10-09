@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+  <title>TechnoZuppers</title>
   
   <meta name="viewport" content="width= device-width; initial-scale=1.0">
+  <meta charset="UTF-8">
 
+  <script src="js/javascript.js"></script>
 
-  <!--[if lt IE 9]>
-  <script> 
-  document.createElement("article");
-  document.createElement("aside");
-  document.createElement("header");
-  document.createElement("footer");
-  document.createElement("main");
-  document.createElement("nav");
-  document.createElement("section"); 
-  </script>
-  <![endIf]--> 
 
 
 </head>
@@ -30,28 +22,15 @@
 
 
 
-<header  class="init" style="border: 2px;">
-
-
-	<img src="./media/logo.png" alt="LOGO" style="float: left;width: 90px;height: 50px; margin-top: 5px;  ">
-    
-
-
-
-  <h1 style="float: left; margin-top: 13px; ">  TechnoZuppers </h1>
+<header>
+	<img src="./images/logo.png" alt="LOGO" id="pagephoto">
+  <h1 id="pagetitle">  TechnoZuppers </h1>
 </header>
 
 
+<nav class="desaparece-mov" >
 
-
-
-
-
-
-
-
-<nav>
-	<div  class="menu">
+	<div  class="menu col-12 col-s-12 right">
     <ul class="options">
     	<li class="options"> <a href="www.google.es">Home </a>   </li>
     	<li class="options"> <a href="www.google.es">Menu </a>   </li>
@@ -59,14 +38,8 @@
     	
     </ul>
    </div>
+
 </nav>
-
-
-
-
-
-
-
 
 
 
@@ -78,18 +51,36 @@
 
 
 
+ 
+   <section class="col-4 col-s-12 auto">
+
 
     
-   <section class="username ">
+     <div >
+      <img src="./images/amelie.jpg" alt="amelie" id="userphoto">
 
-      <img src="./media/amelie.jpg" alt="amelie" class="amelie">
-
-
-   	   <h3  style="margin-top: 33px; float: left; margin-left: 20px;">Amelie Lens</h3>
-
+   	   <h4 id="username">Amelie Lens</h4>
+     </div>
 
 
-     <div style="float: left; margin-top: 10px">
+
+ 
+   <div class="desaparece-mov">
+     <div class="aparece-tab hidden col-s-12  ">
+
+          <ul class="options">
+
+      <li class="options">  <a href="#personalinfo" class="links">Personal Information</a>  </li>
+      <li class="options"> <a href="#lastopinions" class="links">Last Opinions</a>  </li>
+      <li class="options"> <a href="" class="links">My Prefernces</a>  </li>
+      
+          </ul>   
+     </div>
+   </div>
+
+
+
+     <div class="desaparece-tab">
 
 
    	   <div class="apartado">
@@ -98,7 +89,7 @@
    	   	<p>
           Amelie Lens (born 31 May 1990) is a Belgian electronic music DJ, record producer, former model and co-owner of the Lenske record label. She is signed to the Pan-Pot imprint Second State records, with whom she has relaesed several singles and EPs, the most successful to date being 2017's Contradiction EP. She has also recorded for the Drumcode and Elevate labels. Her live sets tend towards bass-heavy minimal techno.</p>
 
-   	   	<hr/>
+   	   	<hr class="col-10" >
    	   </div>
       
 
@@ -112,35 +103,56 @@
    	   	<a href="#lastopinions" class="links">Last Opinions</a>
 
           <ul  class="linklist">
-          	<li><a href="https://www.clashmusic.com/features/amelie-lens-antwerps-unstoppable-queen-of-techno" class="link" style="color: blue">Clash Music</a></li>
-          	<li><p style="padding: 3px; font-size: 10px;">Antwerp's Unstoppable Queen Of Techno.</p></li>
+          	<li><a href="https://www.clashmusic.com/features/amelie-lens-antwerps-unstoppable-queen-of-techno"  class="opinionlinks">Clash Music</a></li>
+          	<li><p class="description">Antwerp's Unstoppable Queen Of Techno.</p></li>
 
-          	<li><a href="https://www.residentadvisor.net/reviews/21914" class="link" style="color: blue">Resident Advisor</a></li>
+          	<li><a href="https://www.residentadvisor.net/reviews/21914" class="opinionlinks">Resident Advisor</a></li>
 
-          	<li><p style="padding: 3px; font-size: 10px;"> ... had huge exposure through performing at festivals like Awakenings and Tomorrowland.</p></li>
+          	<li><p class="description"> ... had huge exposure through performing at festivals like Awakenings and Tomorrowland.</p></li>
 
-          	<li><a href="https://technoscene.eu/2018/01/01/amelie-lens-stay-with-me-perc-mix-second-state/" class="link" style="color: blue">TechnoScene</a></li>
+          	<li><a href="https://technoscene.eu/2018/01/01/amelie-lens-stay-with-me-perc-mix-second-state/"  class="opinionlinks">TechnoScene</a></li>
 
-          	<li><p style="padding: 3px; font-size: 10px;" >Now she’s back, and like her current rise among the industries elite...</p></li>
+          	<li><p class="description" >Now she’s back, and like her current rise among the industries elite...</p></li>
           </ul>
         
 
-        <hr/>
+        <hr class="col-10" />
    	   </div> 
+
+
 
 
    	   <div class="apartado">
    	   	
-   	   	  <h3 style="text-decoration: none;font-size: 14px;font-weight: bold;color: black;margin-left: 10px;">Preferences</h3>
-            <img src="./media/plus.jpg" class="plus">
+   	   	  <h3 class="links">Preferences</h3>
 
-         <div style="margin-top: 5px">
-   	   	   <h6 class="recuadro"> Technazo </h6>
-   	   	   <img src="./media/x.png" class="cruz">
-   	   	   <h6 class="recuadro"> Fabrik </h6>
-   	   	   <img src="./media/x.png" class="cruz">
-   	   	   <h6 class="recuadro"> Mondo </h6>
-   	   	   <img src="./media/x.png" class="cruz">
+           <img src="./images/plus.jpg" onclick="add_palabraclave()" class="plus" alt="mas">
+
+         <div id="palabrasclave">
+
+         <div class="hidden">
+           <input onkeypress="validate(event)" type="text" size="3" maxlength="30" value="" name="nombre" class="recuadro">
+           <img src="./images/x.png" onclick="disappear_father(this)" class="cruz" alt="cruz">
+         </div>
+
+         <div id="palabrasclave_referencia"> 
+           <h6 class="recuadro" > Technazo </h6>
+           <img src="./images/x.png" onclick="disappear_father(this)" class="cruz" alt="cruz">
+         </div>
+   	   	   
+         <div>
+           <h6 class="recuadro"> Fabrik </h6>
+           <img src="./images/x.png" onclick="disappear_father(this)" class="cruz" alt="cruz">
+         </div>  
+   	   	  
+         <div>
+           <h6 class="recuadro"> Mondo </h6>
+           <img src="./images/x.png" onclick="disappear_father(this)" class="cruz" alt="cruz">
+         </div> 
+   	   	   
+        
+
+
         </div>
 
    	   </div>
@@ -148,6 +160,7 @@
 
 
    	  </div> 
+
    </section>
    	
 
@@ -160,84 +173,92 @@
 
 
 
-   <section class="rightpart">
+   <section class="col-8 col-s-12">
 
 
       <div id="personalinfo" class="disappear-pers">
            
-           <h3  style="padding: 30px; text-align: center;">Personal Information</h3>
+           <h3  class="titlepersinfo">Personal Information</h3>
 
-           <input type="text" size="15" maxlength="30" value="Nombre" name="nombre" class="introtextpeq formatocaja">
-           <input type="text" size="15" maxlength="30" value="Apellido" name="Apellido" class="introtextpeq formatocaja">
-           <input type="text" size="15" maxlength="30" value="Email" name="Email" class="introtextgra formatocaja">
-           <input type="text" size="15" maxlength="30" value="XX/XX/XXXX" name="Birthday" class="introtextpeq formatocaja">
-           <input type="text" size="15" maxlength="30" value="PhoneNumber" name="PhoneNumber" class="introtextpeq formatocaja">
-           <input type="text" size="15" maxlength="30" value="Address" name="Address" class="introtextgra formatocaja">
+           <input type="text" size="15" maxlength="30" value="Nombre" name="nombre" class="formatocaja col-5">
+           <input type="text" size="15" maxlength="30" value="Apellido" name="Apellido" class="formatocaja col-5">
+           <input type="text" size="15" maxlength="30" value="Email" name="Email" class="formatocaja col-11">
+           <input type="text" size="15" maxlength="30" value="XX/XX/XXXX" name="Birthday" class="formatocaja col-5">
+           <input type="text" size="15" maxlength="30" value="PhoneNumber" name="PhoneNumber" class="formatocaja col-5">
+           <input type="text" size="15" maxlength="30" value="Address" name="Address" class="formatocaja col-11">
 
             
 
           
 
-           <h3  style="padding: 30px; float:left; margin-top: 10px;width: 100%">Activity in the App</h3>
+      <div id="marginnn" class="col-12">
 
+           <h3  class="titlepersinfo">Activity in the App</h3>
+
+
+
+      <div class="col-12" id="margen">
            <div class="circle">
-           	 <h4 style="margin-top: 28px">100</h4>
-           	 <h4 style="margin-top: 8px">Points</h4>
+           	 <h6 class="number">100</h6>
+           	 <h6 class="etiqueta">Points</h6>
            </div>
           
            <div class="circle">
-           	 <h4 style="margin-top: 28px">4</h4>
-           	 <h4 style="margin-top: 8px">Level</h4>
+           	 <h6 class="number">4</h6>
+           	 <h6 class="etiqueta">Level</h6>
            </div>
           
            <div class="circle">
-           	 <h4 style="margin-top: 28px">14</h4>
-           	 <h4 style="margin-top: 8px">Opinions</h4>
+           	 <h6 class="number">14</h6>
+           	 <h6 class="etiqueta">Opinions</h6>
            </div>
 
             <div class="circle">
-           	 <h4 style="margin-top: 28px">35</h4>
-           	 <h4 style="margin-top: 8px">Sessions</h4>
+           	 <h6 class="number">35</h6>
+           	 <h6 class="etiqueta" >Sessions</h6>
            </div>
-          
+      
+       </div>  
+
+       </div> 
           
      </div>  
 
 
      <div id="lastopinions" class="disappear-last">
      	 
-     	  <h3  style="padding: 40px; padding-bottom: 20px; text-align: center;">Last Opinions</h3>
+     	  <h3  class="titlepersinfo">Last Opinions</h3>
 
 
        <div >
-     	  <div class= "last-recuadro">
-     	  	   <img src="./media/clash.jpg" class="last-photo" ">
+     	  <div class= "last-recuadro col-8 col-s-8">
+     	  	   <img src="./images/clash.jpg" class="last-photo col-4" alt="clash">
                
-               <div class="titulo">
+               <div class="titulo col-8 col-s-8">
                	     <h6 >Clash Music <br/>  (28/03/2018)</h6>
-               	     <p style="padding: 3px; margin-top: 8px;">Fast becoming one of the biggest names in techno, Antwerp-born Amelie Lens’ ascension to festival main stages and dancefloor destruction worldwide has been meteoric.  </p>
+               	     <p class="opinioncontent">Fast becoming one of the biggest names in techno, Antwerp-born Amelie Lens’ ascension to festival main stages and dancefloor destruction worldwide has been meteoric.  </p>
                </div>    
                
 
      	  </div>
 
-     	  <div class= "last-recuadro">
-     	  	   <img src="./media/technoscene.jpg" class="last-photo" ">
+     	  <div class= "last-recuadro col-8 col-s-8">
+     	  	   <img src="./images/technoscene.jpg" class="last-photo col-4" alt="technoscene">
 
-     	  	   <div class="titulo">
+     	  	   <div class="titulo col-8 col-s-8">
                	     <h6 >Techno Scene <br/>  (01/01/2018)</h6>
-               	     <p style="padding: 3px; margin-top: 8px;">“Her return was imminent. Now she’s back, and like her current rise among the industries elite, Amelie Lens delivers an astonishing three tracker of her signature pulse-pounding expeditions"  </p>
+               	     <p class="opinioncontent">“Her return was imminent. Now she’s back, and like her current rise among the industries elite, Amelie Lens delivers an astonishing three tracker of her signature pulse-pounding expeditions"  </p>
                </div>    
      	  </div>
 
-          <div style="height: 100px;">
-              	<img src="./media/refresh.png"  class="refreshicon">
+          <div >
+              	<img src="./images/refresh.png"  class="refreshicon" alt="technoscene">
               </div>
      	   
        </div>
 
               
-
+     
           
          
           
@@ -251,7 +272,22 @@
 
    	  
    </section>
-	
+
+
+	<div class="hidden">
+     <div class="aparece-mov ">
+
+          <ul class="inline finalmenu" >
+
+      <li class="inline">  <a href="#personalinfo" class="links">Personal Information</a>  </li>
+      <li class="inline"> <a href="#lastopinions" class="links">Last Opinions</a>  </li>
+      <li class="inline"> <a href="" class="links">My Preferences</a>  </li>
+      
+          </ul>   
+     </div>
+  </div>
+
+
 
 </main>
 
@@ -259,35 +295,12 @@
 
 
 
-
-
-
-
-
-<aside></aside>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer>
-	   <div style="float: right;margin-right: 4px;">
+	   <div id="sociallinks">
 
-    <a href="https://www.facebook.com/amelielensmusic/"><img src="./media/facebook.png" alt="Facebook" class="socialimg"></a>
-    <a href="https://www.instagram.com/amelie_lens/?hl=es"><img src="./media/instagram.png"  alt="Instagram" class="socialimg"></a>
-    <a href="https://soundcloud.com/amelielens"><img src="./media/soundcloud.png" alt="Soundcloud" class="socialimg"></a>
+    <a href="https://www.facebook.com/amelielensmusic/"><img src="./images/facebook.png" alt="Facebook" class="socialimg"></a>
+    <a href="https://www.instagram.com/amelie_lens/?hl=es"><img src="./images/instagram.png"  alt="Instagram" class="socialimg"></a>
+    <a href="https://soundcloud.com/amelielens"><img src="./images/soundcloud.png" alt="Soundcloud" class="socialimg"></a>
     	
     	
     	
